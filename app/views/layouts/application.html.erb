@@ -11,6 +11,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar-wagon">
+      <%= link_to "Rolodex", restaurants_path %>
+      <%= link_to "New Restaurant", new_restaurant_path %>
+    </div>
+    <div class="container">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

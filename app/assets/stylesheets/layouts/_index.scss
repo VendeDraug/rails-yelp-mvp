@@ -1,5 +1,28 @@
-// Import your layouts CSS files here.
-// Examples:
-// @import "dashboard";
-// @import "profile";
-// @import "map";
+@import "navbar";
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: black;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+a {
+  color: red;
+  opacity: 0.7;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+  opacity: 1;
+}
+
+.error-message {
+  list-style: none;
+}

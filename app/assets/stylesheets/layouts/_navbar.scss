@@ -1,0 +1,10 @@
+.navbar-wagon {
+  a {
+    color: red;
+    opacity: 0.8;
+    &:hover {
+      text-decoration: none;
+      opacity: 1;
+    }
+  }
+}
