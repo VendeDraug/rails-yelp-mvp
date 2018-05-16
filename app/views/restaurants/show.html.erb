@@ -11,4 +11,4 @@
 <br>
 <hr>
 
-<%= link_to "Write a review", new_restaurant_review_path(@restaurant) %>
+<%= render "shared/form_review", restaurant: @restaurant, review: @review %>

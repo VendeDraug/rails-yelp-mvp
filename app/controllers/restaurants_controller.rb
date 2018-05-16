@@ -1,5 +1,5 @@
 class RestaurantsController < ApplicationController
-  before_action :set_restaurant, only: [:show, :create]
+  before_action :set_restaurant, only: [:show]
 
   def index
     @restaurants = Restaurant.all
@@ -10,7 +10,7 @@ class RestaurantsController < ApplicationController
   end
 
   def create
-    @restaurant.create(restaurant_params)
+    @restaurant = Restaurant.new(restaurant_params)
     if @restaurant.save
       redirect_to restaurants_path
     else
@@ -19,6 +19,7 @@ class RestaurantsController < ApplicationController
   end
 
   def show
+    @review = Review.new
   end
 
   private
